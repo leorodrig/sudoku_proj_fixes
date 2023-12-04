@@ -8,7 +8,6 @@ class SudokuGenerator:
         self.removed_cells = removed_cells
         self.box_length = row_length / 3
         self.original_board = []
-        self.editable_board = []
 
     def get_board(self):
         return self.original_board
@@ -17,8 +16,9 @@ class SudokuGenerator:
         pass
 
     def valid_in_row(self, row, num):
-        for i in range(0, 9):
-            if self
+        # for i in range(0, 9):
+        #     if self
+        pass
 
     def valid_in_col(self, col, num):
         pass
@@ -108,10 +108,3 @@ def generate_sudoku(size, removed):
     sudoku.remove_cells()
     board = sudoku.get_board()
     return board
-
-
-board = generate_sudoku(9, 30)
-for values in board:
-    print(values)
-
-
