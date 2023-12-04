@@ -18,8 +18,13 @@ class Board:
 
     def __init__(self, difficulty):
         # will not include height width and screen for this version
-        # difficulty will be int of 30, 40, or 50
-        self.difficulty = difficulty
+        # difficulty will be "e", "m", or "h"
+        if difficulty == "e":
+            self.difficulty = 30
+        elif difficulty == "m":
+            self.difficulty = 40
+        elif difficulty == "h":
+            self.difficulty = 50
 
     def draw(self):
         pass
@@ -33,5 +38,3 @@ class Board:
         pass
 
 
-board = Board(30)
-board.draw()
